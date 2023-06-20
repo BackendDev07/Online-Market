@@ -278,3 +278,51 @@ img {vertical-align: middle;}
 }
 
 // main
+
+.product{
+    &__top{
+        margin-top: 50px;
+        h1{
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+    }
+    &__nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        align-content: start;
+        flex-wrap: wrap;
+    }
+    &__cart{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px;
+        margin-bottom: 30px;box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        border-radius: 4px;
+        cursor: pointer;
+        img{
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        span{
+            width: 100%;
+            text-align: start;
+            margin: 5px 0;
+        }
+        p{
+            color: rgba(128, 128, 128, 0.71);
+            width: 100%;
+
+        }
+        &:hover{
+            transition: all 0.6s ease;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+    }
+}
